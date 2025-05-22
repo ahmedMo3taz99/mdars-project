@@ -1,8 +1,7 @@
 import React from "react";
-import Navigation from "@/app/_components/Navigation";
-import Logo from "@/app/_components/Logo";
 import GlobalStyles from "./_styles/GlobalStyles";
-import Header from "./_components/Header";
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/Footer";
 
 export const metadata = {
   title: {
@@ -21,7 +20,7 @@ export default function RootLayout({ children }) {
         <GlobalStyles />
         <Header />
         <main>{children}</main>
-        <footer>the footer</footer>
+        <Footer />
       </body>
     </html>
   );
