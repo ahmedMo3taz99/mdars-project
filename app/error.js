@@ -3,27 +3,27 @@
 import styled from "styled-components";
 
 const Main = styled.main`
-  background-color: #888;
+  background-color: var(--color-grey-900);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color:#fff;
+  color: var(--color-grey-200);
 
   h1 {
     font-size: 3rem;
   }
 
   .goOut {
-    background-color: #222;
+    background-color: var(--color-grey-600);
     padding: 2rem 6rem;
     margin-top: 3rem;
     border-radius: 2rem;
     transition: all 0.4s;
 
     &:hover {
-      background-color:#888;
+      background-color: var(--color-grey-800);
     }
   }
 `;

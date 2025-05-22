@@ -30,13 +30,13 @@ const pulse = keyframes`
 // ========== Styled Components ==========
 
 const Main = styled.main`
-  background-color: #555;
+  background-color: var(--color-grey-900);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--color-grey-200);
   padding: 2rem;
   text-align: center;
   animation: ${fadeIn} 0.8s ease-in;
@@ -49,8 +49,8 @@ const Title = styled.h1`
 `;
 
 const StyledLink = styled(Link)`
-  background-color: black;
-  color: #fff;
+  background-color: var(--color-grey-700);
+  color: var(--color-grey-100);
   padding: 1.5rem 4rem;
   margin-top: 3rem;
   border-radius: 2rem;
@@ -62,7 +62,7 @@ const StyledLink = styled(Link)`
   animation: ${pulse} 2s infinite;
 
   &:hover {
-    background-color: #555;
+    background-color: var(--color-grey-800);
   }
 `;
 
