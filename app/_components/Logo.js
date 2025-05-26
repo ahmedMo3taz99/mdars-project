@@ -7,10 +7,10 @@ export default function Logo() {
   return (
     <Link href="/">
       <Image
-        width={200}
-        height={100}
+        width={170}
+        height={80}
         priority
-        quality={100}
+        quality={90}
         src={logo}
         alt="logo of this webiste"
       />
