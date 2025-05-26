@@ -20,7 +20,11 @@ export default function Distinctive() {
       <div className="container">
         <DistinctiveTop />
         <SchoolCards />
-        <div className="browse-btn">
+        <div
+          className="browse-btn"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <Link className="dark-btn" href="#">
             تصفح الكل
           </Link>

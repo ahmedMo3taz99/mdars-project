@@ -58,8 +58,14 @@ export default function NumberPublic() {
   return (
     <>
       <NumberPublicStled className="number-of-public active" id="inqirah">
-        <p>أنقـرة</p>
-        <div className="public-box">
+        <p data-aos="fade-up" data-aos-duration="1000">
+          أنقـرة
+        </p>
+        <div
+          className="public-box"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="public-icon">
             <Image src={Madares} alt="icon-school" height={25} width={50} />
           </div>
@@ -68,7 +74,11 @@ export default function NumberPublic() {
             <p>29 مدرسة</p>
           </div>
         </div>
-        <div className="public-box">
+        <div
+          className="public-box"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <div className="public-icon">
             <Image src={Student} alt="icon-student" height={25} width={50} />
           </div>
@@ -79,9 +89,15 @@ export default function NumberPublic() {
         </div>
       </NumberPublicStled>
 
-      <NumberPublicStled className="number-of-public" id="sifas">
-        <p>سيفاس</p>
-        <div className="public-box">
+      <NumberPublicStled className="number-of-public " id="sifas">
+        <p data-aos="fade-up" data-aos-duration="1000">
+          سيفاس
+        </p>
+        <div
+          className="public-box"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div className="public-icon">
             <Image src={Madares} alt="icon-school" height={25} width={50} />
           </div>
@@ -90,7 +106,11 @@ export default function NumberPublic() {
             <p>14 مدرسة</p>
           </div>
         </div>
-        <div className="public-box">
+        <div
+          className="public-box"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
           <div className="public-icon">
             <Image src={Student} alt="icon-student" height={25} width={50} />
           </div>

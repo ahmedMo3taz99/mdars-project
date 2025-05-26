@@ -187,6 +187,8 @@ export default function SortRow() {
       {/* تصنيف حسب */}
       <FilterDropdown ref={filterRef}>
         <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
           className="filter-button"
           onClick={() => setIsFilterOpen((prev) => !prev)}
         >
@@ -210,6 +212,8 @@ export default function SortRow() {
       {/* الدولة */}
       <LocationDropdown ref={locationRef}>
         <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
           className="location-button"
           onClick={() => setIsLocationOpen((prev) => !prev)}
         >

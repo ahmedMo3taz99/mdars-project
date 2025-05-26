@@ -64,7 +64,7 @@ const SchoolBoxStyle = styled.div`
 
 export default function SchoolBox() {
   return (
-    <SchoolBoxStyle>
+    <SchoolBoxStyle data-aos="fade-up" data-aos-duration="2000">
       <div className="select-school">
         <a href="#inqirah">مدارس تركيا</a>
       </div>

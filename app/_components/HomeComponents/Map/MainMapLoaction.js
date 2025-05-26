@@ -91,7 +91,7 @@ export default function MainMapLoaction() {
     <MapLoactionStyled>
       <div className="map-location">
         <div className="locations">
-          <div className="map-img">
+          <div className="map-img" data-aos="zoom-in" data-aos-duration="1000">
             <Image src={MainMap} alt="map" className="srcc" />
           </div>
           <div className="location active" id="inqirah-location">

@@ -88,7 +88,9 @@ const DistinctiveTopStyled = styled.div`
 export default function DistinctiveTop() {
   return (
     <DistinctiveTopStyled>
-      <h2 className="after-ly">المدارس المميزة</h2>
+      <h2 className="after-ly" data-aos="fade-up" data-aos-duration="2000">
+        المدارس المميزة
+      </h2>
       <div className="scroll-tab-row">
         <ul className="tabs-list">
           <li>

@@ -166,11 +166,17 @@ export default function MainMapSlider() {
 
   return (
     <MapSlider>
-      <a className="primary-btn view-btn" href="#">
+      <a
+        className="primary-btn view-btn"
+        href="#"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         عرض الكل
       </a>
-
       <Swiper
+        data-aos="fade-left"
+        data-aos-duration="1000"
         modules={[Navigation]}
         spaceBetween={10}
         slidesPerView={1}
@@ -227,7 +233,6 @@ export default function MainMapSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <div className="nav-buttons">
         <button ref={prevRef}>&lt;</button>
         <button ref={nextRef}>&gt;</button>

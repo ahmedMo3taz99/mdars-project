@@ -112,7 +112,11 @@ const SchoolCardsRow = styled.div`
 export default function SchoolCards() {
   return (
     <SchoolCardsRow>
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -149,7 +153,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -186,7 +194,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -223,7 +235,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -260,7 +276,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -297,7 +317,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -334,7 +358,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">
@@ -371,7 +399,11 @@ export default function SchoolCards() {
         </div>
       </div>
 
-      <div className="school-card-col">
+      <div
+        className="school-card-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="school-card">
           <div className="card-info">
             <div className="card-img">

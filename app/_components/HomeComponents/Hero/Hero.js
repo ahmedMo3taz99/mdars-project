@@ -103,14 +103,16 @@ export default function Hero() {
     <MainDiv>
       <div className="container">
         <BannerInfo>
-          <h1>اختر المدرسة الأفضل لأولادك</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="1000">
+            اختر المدرسة الأفضل لأولادك
+          </h1>
+          <p data-aos="fade-left" data-aos-duration="2000">
             استكشف مجموعة واسعة من أفضل المدارس العالمية والأهلية في السعودية
             عبر منصة مدارس.ai. احجز مقعدًا دراسيًا لأطفالك بكل سهولة واستفد من
             خدمة التقسيط الميسرة .
           </p>
 
-          <BannerCheckbox>
+          <BannerCheckbox data-aos="fade-up" data-aos-duration="2000">
             <input type="checkbox" id="chk1" />
             <label htmlFor="chk1">مع خيار التقسيط</label>
           </BannerCheckbox>
