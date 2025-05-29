@@ -54,20 +54,42 @@ export default function MainPartner() {
             شركاء النجاح
           </h2>
           <div className="brands">
-            <div className="brand-logo college-board" data-aos="fade-left" data-aos-duration="3000">
+            <div
+              className="brand-logo college-board"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
               <Image src={College} alt="logo" width={252} />
             </div>
-            <div className="brand-logo pearsons" data-aos="fade-left" data-aos-duration="2000">
+            <div
+              className="brand-logo pearsons"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <Image src={Pearsons} alt="logo" width={205} />
             </div>
-            <div className="brand-logo aiaa" data-aos="fade-left" data-aos-duration="2000">
+            <div
+              className="brand-logo aiaa"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <Image src={Aiaa} alt="logo" width={170} />
             </div>
-            <div className="brand-logo cognia"  data-aos="fade-left" data-aos-duration="1000">
+            <div
+              className="brand-logo cognia"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <Image src={Cognia} alt="logo" width={216} />
             </div>
             <div className="brand-logo turkey">
-              <Image src={Turkey} alt="logo" width={94}  data-aos="fade-left" data-aos-duration="1000"/>
+              <Image
+                src={Turkey}
+                alt="logo"
+                width={94}
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
             </div>
           </div>
         </div>

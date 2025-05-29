@@ -7,7 +7,7 @@ import BgImage from "@/app/_images/home/home-banner.png";
 import DiscussBox from "./DiscussBox";
 
 const MainDiv = styled.div`
-  padding: 20.9rem 0 14.7rem;
+  padding: 10rem 0 14.7rem;
   background: var(--primary-color);
   background-image: url(${BgImage.src});
   background-repeat: no-repeat;

@@ -43,7 +43,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href="#" className="linkk">
+          <Link href="/about" className="linkk">
             من نحن
           </Link>
         </li>

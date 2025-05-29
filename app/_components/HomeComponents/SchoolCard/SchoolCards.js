@@ -90,7 +90,7 @@ const SchoolCardsRow = styled.div`
         padding-top: 10px;
 
         .price {
-          sm {
+          span {
             font-size: 12px;
             font-weight: 500;
             color: var(--dark-color);
@@ -143,7 +143,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -184,7 +184,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -225,7 +225,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -266,7 +266,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -307,7 +307,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -348,7 +348,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -389,7 +389,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">
@@ -430,7 +430,7 @@ export default function SchoolCards() {
           </div>
           <div className="book-now">
             <div className="price">
-              <sm>تبدأ من </sm>
+              <span>تبدأ من </span>
               <h4> 3500$</h4>
             </div>
             <Link className="primary-btn" href="#">

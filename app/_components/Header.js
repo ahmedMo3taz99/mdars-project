@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const HeaderStled = styled.header`
   padding: 4rem 0;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   right: 0;
   overflow-x: clip;
