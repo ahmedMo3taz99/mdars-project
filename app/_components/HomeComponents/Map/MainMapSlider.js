@@ -112,7 +112,7 @@ const MapSlider = styled.div`
       padding-top: 10px;
 
       .price {
-        sm {
+        p {
           font-size: 12px;
           font-weight: 500;
           color: var(--dark-color);
@@ -221,7 +221,7 @@ export default function MainMapSlider() {
                 </div>
                 <div className="book-now">
                   <div className="price">
-                    <small>تبدأ من </small>
+                    <p>تبدأ من </p>
                     <h4>{school.price}</h4>
                   </div>
                   <a className="primary-btn" href="#">

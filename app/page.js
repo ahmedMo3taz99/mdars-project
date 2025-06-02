@@ -16,7 +16,7 @@ export default function Page() {
   useEffect(() => {
     AOS.init();
   }, []);
-  
+
   return (
     <>
       <Hero />

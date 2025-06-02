@@ -1,3 +1,4 @@
+"use client"
 import styled from "styled-components";
 
 import Massage from "@/app/_images/robot/message-icon.png";

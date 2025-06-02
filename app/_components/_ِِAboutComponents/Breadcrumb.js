@@ -5,7 +5,7 @@ import styled from "styled-components";
 import HomeIcon from "@/app/_images/about/breadCrumb/home-icon.png";
 import Image from "next/image";
 
-const BreadcrumbStyle = styled.div`
+export const BreadcrumbStyle = styled.div`
   padding: 15px 0;
   background: var(--dark-color);
 

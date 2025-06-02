@@ -5,7 +5,7 @@ import Success from "@/app/_images/home/card/cards/success-icon.png";
 import Image from "next/image";
 import Link from "next/link";
 
-const SchoolCardsRow = styled.div`
+export const SchoolCardsRow = styled.div`
   display: flex;
   align-items: stretch;
   justify-content: space-between;

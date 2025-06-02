@@ -33,7 +33,7 @@ export default function Navigation() {
     <HeaderMenu>
       <ul className="header-menu-list">
         <li>
-          <Link href="#" className="linkk">
+          <Link href="./schools" className="linkk">
             المدراس
           </Link>
         </li>

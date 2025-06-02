@@ -1,4 +1,4 @@
-import Link from "next/link";
+import MainSchoolsPage from "../_components/_SchoolPage/MainSchoolsPage";
 
 export const metadata = {
   title: "AllSchool",
@@ -7,7 +7,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <h1>schools</h1>
+      <MainSchoolsPage />
     </div>
   );
 }

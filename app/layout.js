@@ -1,6 +1,6 @@
 import React from "react";
-import GlobalStyles from "./_styles/GlobalStyles";
 import BodyStructure from "./_components/BodyStructure";
+import GlobalStyles from "./_styles/GlobalStyles";
 
 export const metadata = {
   title: {
