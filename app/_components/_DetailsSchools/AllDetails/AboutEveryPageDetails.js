@@ -204,7 +204,7 @@ const ImgTabLink = styled.button`
   color: var(--dark-color);
   background: var(--white-color);
   text-align: center;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
   border: none;
   border-right: 1px solid var(--offwhite-color);
