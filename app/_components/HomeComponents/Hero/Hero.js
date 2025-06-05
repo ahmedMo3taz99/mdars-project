@@ -5,30 +5,50 @@ import CheckBox from "@/app/_images/home/icon/checkbox.png";
 import UnderLine from "@/app/_images/home/bd-bottom-layer.png";
 import BgImage from "@/app/_images/home/home-banner.png";
 import DiscussBox from "./DiscussBox";
+import { useTranslation } from "../../LanguageProvider";
+import Image from "next/image";
 
 const MainDiv = styled.div`
   padding: 10rem 0 14.7rem;
   background: var(--primary-color);
-  background-image: url(${BgImage.src});
+  height: 80vh;
+  /* background-image: url(${BgImage.src});
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 72.6rem;
+  background-size: 72.6rem; */
+
+  display: flex;
+  overflow: hidden;
+
+  .container {
+    width: auto !important;
+  }
+`;
+
+const BgImageStyled = styled.div`
+  width: 50%;
+  order: 2;
+  .srcc {
+    object-fit: contain;
+  }
 `;
 
 const BannerInfo = styled.div`
-  width: 100%;
+  width: 150%;
   max-width: 69.1rem;
   color: var(--white-color);
 
+  order: 1;
+
   h1 {
-    max-width: 41rem;
+    /* max-width: 41rem; */
     font-size: 6.8rem;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      left: 0;
+      left: 10rem;
       right: auto;
       top: 10rem;
       width: 18.8rem;
@@ -99,22 +119,26 @@ const BannerCheckbox = styled.div`
 `;
 
 export default function Hero() {
+  const { t, locale } = useTranslation();
+
   return (
     <MainDiv>
+      <BgImageStyled>
+        <Image src={BgImage} alt="heroImage" className="srcc" width={1200} height={635}/>
+      </BgImageStyled>
+
       <div className="container">
         <BannerInfo>
           <h1 data-aos="fade-up" data-aos-duration="1000">
-            اختر المدرسة الأفضل لأولادك
+            {t("title")}
           </h1>
           <p data-aos="fade-left" data-aos-duration="2000">
-            استكشف مجموعة واسعة من أفضل المدارس العالمية والأهلية في السعودية
-            عبر منصة مدارس.ai. احجز مقعدًا دراسيًا لأطفالك بكل سهولة واستفد من
-            خدمة التقسيط الميسرة .
+            {t("description")}
           </p>
 
           <BannerCheckbox data-aos="fade-up" data-aos-duration="2000">
             <input type="checkbox" id="chk1" />
-            <label htmlFor="chk1">مع خيار التقسيط</label>
+            <label htmlFor="chk1"> {t("installment")}</label>
           </BannerCheckbox>
 
           <DiscussBox />

@@ -1,4 +1,4 @@
-import ParentOfAbout from "../_components/_ِِAboutComponents/ParentOfAbout";
+import ParentOfAbout from "@/app/_components/_ِِAboutComponents/ParentOfAbout";
 
 export const metadata = {
   title: "About",

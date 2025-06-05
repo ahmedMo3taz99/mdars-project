@@ -8,42 +8,42 @@ import Image from "next/image";
 export const BreadcrumbStyle = styled.div`
   padding: 15px 0;
   background: var(--dark-color);
+`;
 
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    margin: 0 -15px;
-    flex-wrap: wrap;
+export const TheBreadcrumb = styled.ul`
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+  flex-wrap: wrap;
 
-    li {
+  li {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+    position: relative;
+
+    &::after {
+      content: ">";
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 18px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    a {
       color: var(--white-color);
-      font-size: 14px;
-      font-weight: 500;
-      padding: 0 20px;
-      position: relative;
+    }
 
-      &::after {
-        content: ">";
-        position: absolute;
-        left: -5px;
-        top: 50%;
-        transform: translate(0, -50%);
-        font-size: 18px;
-      }
-
-      &:last-child::after {
-        display: none;
-      }
-
-      a {
-        color: var(--white-color);
-      }
-
-      span {
-        display: block;
-        width: 100%;
-        max-width: 15px;
-      }
+    span {
+      display: block;
+      width: 100%;
+      max-width: 15px;
     }
   }
 `;
@@ -52,7 +52,7 @@ export default function Breadcrumb() {
   return (
     <BreadcrumbStyle>
       <div className="container">
-        <ul className="breadcrumb">
+        <TheBreadcrumb as="ul">
           <li>
             <a href="#">
               <span>
@@ -61,7 +61,7 @@ export default function Breadcrumb() {
             </a>
           </li>
           <li>من نحن</li>
-        </ul>
+        </TheBreadcrumb>
       </div>
     </BreadcrumbStyle>
   );

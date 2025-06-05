@@ -1,4 +1,4 @@
-import LoginNavigation from "../_components/LoginNavigation";
+import LoginNavigation from "../../_components/LoginNavigation";
 
 export const metadata = {
   title: "Login",

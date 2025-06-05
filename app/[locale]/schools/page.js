@@ -1,4 +1,4 @@
-import MainSchoolsPage from "../_components/_SchoolPage/MainSchoolsPage";
+import MainSchoolsPage from "../../_components/_SchoolPage/MainSchoolsPage";
 
 export const metadata = {
   title: "AllSchool",
