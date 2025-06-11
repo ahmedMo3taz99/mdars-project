@@ -7,6 +7,14 @@ import { isValidLocale } from "../../lib/i18n";
 import { notFound } from "next/navigation";
 import { LanguageProvider } from "../_components/LanguageProvider";
 
+export const metadata = {
+  title: {
+    template: "%s | Mdares",
+    default: "Welcome To | Mdares",
+  },
+  description: "The biggest website for school reservations for your child",
+};
+
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
 
@@ -16,16 +24,14 @@ export default async function LocaleLayout({ children, params }) {
   }
 
   return (
-    <>
+    <div lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <GlobalStyles />
       <LanguageProvider locale={locale}>
-        <div dir={locale === "ar" ? "rtl" : "ltr"} lang={locale}>
-          <Robt />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <Robt />
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </LanguageProvider>
-    </>
+    </div>
   );
 }
