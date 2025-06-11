@@ -1,5 +1,4 @@
 import React from "react";
-import GlobalStyles from "../_styles/GlobalStyles";
 import Robt from "../_components/Robt";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
@@ -25,7 +24,6 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <div lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <GlobalStyles />
       <LanguageProvider locale={locale}>
         <Robt />
         <Header />
