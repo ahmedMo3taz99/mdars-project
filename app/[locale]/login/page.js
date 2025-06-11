@@ -1,4 +1,5 @@
-import LoginNavigation from "../../_components/LoginNavigation";
+import BreadcrumbLogin from "@/app/_components/_login/BreadcrumbLogin";
+import LoginNavigation from "@/app/_components/_login/LoginNavigation";
 
 export const metadata = {
   title: "Login",
@@ -6,10 +7,9 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div>
-      <h1>اختار نوع الحساب</h1>
-
+    <>
+      <BreadcrumbLogin />
       <LoginNavigation />
-    </div>
+    </>
   );
 }

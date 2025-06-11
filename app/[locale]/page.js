@@ -1,24 +1,17 @@
-"use client";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
-import MainAchievement from "../_components/HomeComponents/Achievement/MainAchievement";
-import MainFeatures from "../_components/HomeComponents/Features/MainFeatures";
-import MainGoal from "../_components/HomeComponents/Goal/MainGoal";
-import Hero from "../_components/HomeComponents/Hero/Hero";
-import MainMap from "../_components/HomeComponents/Map/MainMap";
-import MainPartner from "../_components/HomeComponents/Partner/MainPartner";
-import Distinctive from "../_components/HomeComponents/SchoolCard/Distinctive";
+import MainAchievement from "../_components/_HomeComponents/Achievement/MainAchievement";
+import MainFeatures from "../_components/_HomeComponents/Features/MainFeatures";
+import MainGoal from "../_components/_HomeComponents/Goal/MainGoal";
+import Hero from "../_components/_HomeComponents/Hero/Hero";
+import MainMap from "../_components/_HomeComponents/Map/MainMap";
+import MainPartner from "../_components/_HomeComponents/Partner/MainPartner";
+import Distinctive from "../_components/_HomeComponents/SchoolCard/Distinctive";
+import AOSProvider from "../_components/AOSProvider";
 
 export default function Page() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
-    <>
+    <AOSProvider>
       <Hero />
       <Distinctive />
       <MainMap />
@@ -26,6 +19,6 @@ export default function Page() {
       <MainAchievement />
       <MainGoal />
       <MainPartner />
-    </>
+    </AOSProvider>
   );
 }

@@ -1,5 +1,5 @@
-import Spinner from "@/app/_components/Spinner";
+import BigSpinner from "@/app/_components/BigSpinner";
 
 export default function Loading() {
-  return <Spinner />;
+  return <BigSpinner />;
 }

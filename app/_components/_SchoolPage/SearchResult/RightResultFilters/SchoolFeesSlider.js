@@ -1,3 +1,5 @@
+"use client"
+
 // components/SchoolFeesSlider.js
 import styled from "styled-components";
 import Slider from "rc-slider";

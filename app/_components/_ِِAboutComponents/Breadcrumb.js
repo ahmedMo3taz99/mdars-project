@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import HomeIcon from "@/app/_images/about/breadCrumb/home-icon.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export const BreadcrumbStyle = styled.div`
   padding: 15px 0;
@@ -54,11 +55,11 @@ export default function Breadcrumb() {
       <div className="container">
         <TheBreadcrumb as="ul">
           <li>
-            <a href="#">
+            <Link href="/">
               <span>
                 <Image src={HomeIcon} alt="home" width={15} />
               </span>
-            </a>
+            </Link>
           </li>
           <li>من نحن</li>
         </TheBreadcrumb>

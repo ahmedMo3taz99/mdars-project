@@ -133,6 +133,8 @@ legend {
   vertical-align: baseline;
   background: transparent;
   font-size: 62.5%;
+  font-family: var(--font-plex), 'Arial', sans-serif;
+
 
 }
 

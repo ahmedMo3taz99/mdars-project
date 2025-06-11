@@ -1,3 +1,5 @@
+"use client"
+
 import styled from "styled-components";
 import { FiltersList } from "./FrFilter";
 import SchoolFeesSlider from "./SchoolFeesSlider";

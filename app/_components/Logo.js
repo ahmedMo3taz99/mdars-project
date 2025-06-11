@@ -12,8 +12,10 @@ const LogoStyled = styled.div`
   margin: 0 5rem;
   .srcc {
     object-fit: contain;
-    transition: "all 0.3s ease";
-    cursor: "pointer";
+    transition: all 0.3s ease;
+    cursor: pointer;
+    /* ده الحل - خلي الـ height يتحسب تلقائياً */
+    height: auto !important;
   }
 `;
 
@@ -31,13 +33,18 @@ export default function Logo() {
     <LogoStyled>
       <Link href={homeLink}>
         <Image
-          width={190}
-          height={80}
+          width={0}
+          height={0}
           priority
           quality={90}
           src={logoSrc}
           alt={altText}
           className="srcc"
+          sizes="190px"
+          style={{
+            width: '190px',
+            height: 'auto'
+          }}
         />
       </Link>
     </LogoStyled>

@@ -1,3 +1,4 @@
+"use client";
 import styled from "styled-components";
 import Image from "next/image";
 
@@ -6,6 +7,8 @@ import SecFilter from "./RightResultFilters/SecFilter";
 import MoreFilter from "./RightResultFilters/MoreFilter";
 
 import { FaCodeCompare } from "react-icons/fa6";
+import Link from "next/link";
+import { useTranslation } from "../../LanguageProvider";
 
 const RightResultStyled = styled.div`
   width: 30%;
@@ -73,20 +76,33 @@ const Icon = styled.div`
   border-radius: 1rem;
   margin-bottom: 1rem;
   width: max-content;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #333;
+  }
+
   .iconComaper {
     font-size: 2.5rem;
   }
   p {
     font-size: 1.8rem;
+    margin: 0;
   }
 `;
+
 export default function RightResult() {
+  const { locale } = useTranslation();
   return (
     <RightResultStyled>
-      <Icon data-aos="fade-left" data-aos-duration="2000">
-        <FaCodeCompare className="iconComaper" />
-        <p>مقارنة بين المدارس</p>
-      </Icon>
+      <Link href={`/${locale}/schools/comparing`}>
+        <Icon data-aos="fade-left" data-aos-duration="2000">
+          <FaCodeCompare className="iconComaper" />
+          <p>مقارنة بين المدارس</p>
+        </Icon>
+      </Link>
+
       <div className="result-filters">
         <div className="filter-btn">
           <h3>الفلتر</h3>

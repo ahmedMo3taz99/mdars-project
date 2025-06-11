@@ -1,30 +1,6 @@
-"use client";
-
-import styled from "styled-components";
 import LeftResult from "./SearchResult/LeftResult";
 import RightResult from "./SearchResult/RightResult";
-
-const MainSearchResultStyled = styled.div`
-  background: var(--offwhite-color);
-  padding: 27px 0 150px;
-
-  .search-lead-title {
-    max-width: 651px;
-    padding: 50px 0 40px;
-
-    p {
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
-
-  .search-result {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-`;
+import { MainSearchResultStyled, SearchResult } from "./AllstyledSchool";
 
 export default function MainSearchResult() {
   return (
@@ -41,11 +17,11 @@ export default function MainSearchResult() {
           </p>
         </div>
 
-        <div className="search-result">
+        <SearchResult>
           <RightResult />
 
           <LeftResult />
-        </div>
+        </SearchResult>
       </div>
     </MainSearchResultStyled>
   );

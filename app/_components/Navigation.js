@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import styled from "styled-components";
 import LoactionLogIn from "./LoactionLogIn";
 import { useTranslation } from "./LanguageProvider";
+import NavLink from "./NavLink";
+import LanguageSwitcherLang from "./LanguageSwitcherLang";
 
 const HeaderMenu = styled.div`
   display: flex;
@@ -17,40 +18,10 @@ const MenuList = styled.ul`
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 1rem;
+  padding-right: 5rem;
 
   li {
     padding: 0 2rem;
-
-    .linkk {
-      font-size: 2rem;
-      color: var(--white-color);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      position: relative;
-      padding: 0.5rem 0;
-
-      &:hover {
-        color: var(--secondary-color);
-        transform: translateY(-2px);
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: var(--secondary-color);
-        transition: width 0.3s ease;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
   }
 `;
 
@@ -146,34 +117,15 @@ export default function Navigation() {
     router.push(newPath);
   };
 
-  //  لإنشاء روابط
-  const createLocalizedLink = (path) => {
-    return `/${locale}${path}`;
-  };
-
   return (
     <NavigationWrapper>
       <HeaderMenu>
         <MenuList className="header-menu-list">
           <li>
-            <Link href={createLocalizedLink("/schools")} className="linkk">
-              {t("schools")}
-            </Link>
+            <NavLink href="/schools"> {t("schools")} </NavLink>
           </li>
           <li>
-            <Link href={createLocalizedLink("/teachers")} className="linkk">
-              {t("teachers")}
-            </Link>
-          </li>
-          <li>
-            <Link href={createLocalizedLink("/about")} className="linkk">
-              {t("about")}
-            </Link>
-          </li>
-          <li>
-            <Link href={createLocalizedLink("/contact")} className="linkk">
-              {t("contact")}
-            </Link>
+            <NavLink href="/about"> {t("about")} </NavLink>
           </li>
         </MenuList>
 

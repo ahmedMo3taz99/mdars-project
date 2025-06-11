@@ -1,24 +1,26 @@
 import HomeIcon from "@/app/_images/about/breadCrumb/home-icon.png";
 import Image from "next/image";
-import { BreadcrumbStyle } from "../_ِِAboutComponents/Breadcrumb";
+import {
+  BreadcrumbStyle,
+  TheBreadcrumb,
+} from "../_ِِAboutComponents/Breadcrumb";
+import Link from "next/link";
 
 export default function SchoolBreadcrumb() {
   return (
     <BreadcrumbStyle>
       <div className="container">
-        <ul className="breadcrumb">
+        <TheBreadcrumb as="ul">
           <li>
-            <a href="#">
+            <Link href="/">
               <span>
                 <Image src={HomeIcon} alt="home" width={15} />
               </span>
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="#">المدارس</a>
-          </li>
+          <li>المدارس</li>
           <li>البحث المتقدم</li>
-        </ul>
+        </TheBreadcrumb>
       </div>
     </BreadcrumbStyle>
   );

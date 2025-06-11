@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 
 import FilterLight from "@/app/_images/schoolspage/filter/filter-info-icon.png";
