@@ -4,7 +4,7 @@ import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 import { isValidLocale } from "../../lib/i18n";
 import { notFound } from "next/navigation";
-import { LanguageProvider } from "../_components/LanguageProvider";
+import { AppProvider } from "../_components/LanguageProvider";
 
 export const metadata = {
   title: {
@@ -24,12 +24,12 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <div lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <LanguageProvider locale={locale}>
+      <AppProvider locale={locale}>
         <Robt />
         <Header />
         <main>{children}</main>
         <Footer />
-      </LanguageProvider>
+      </AppProvider>
     </div>
   );
 }

@@ -88,7 +88,6 @@ const Container = styled.main`
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  margin: -0.5rem;
 
   &::before {
     content: "";

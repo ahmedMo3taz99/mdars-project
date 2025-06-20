@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import styled from "styled-components";
 import MapTopbar from "./MainMapTopbar";
 import MainMapLoaction from "./MainMapLoaction";
 import MainMapSlider from "./MainMapSlider";
+import MainMapSE from "./MainMapSE";
 
 const MapWrap = styled.div`
   background: var(--dark-color);
@@ -17,8 +18,8 @@ export default function MainMap() {
         <div className="map-box">
           <MapTopbar />
 
-          <MainMapLoaction />
-
+          {/* <MainMapLoaction /> */}
+          <MainMapSE />
           <MainMapSlider />
         </div>
       </div>
